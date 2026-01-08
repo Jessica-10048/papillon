@@ -1,0 +1,119 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* GLOBAL */
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: #faf9f7;
+  color: #2e2e2e;
+  line-height: 1.8;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 24px;
+  background-color: #ffffff;
+}
+
+.logo {
+  width: 55px;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 18px;
+}
+
+.nav-list li {
+  font-size: 0.9rem;
+  color: #6b4f7a;
+}
+
+/* MAIN */
+main {
+  max-width: 680px;
+  margin: 40px auto 0 auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+/* TITRE */
+h1 {
+  font-family: Georgia, serif;
+  font-size: 2.2rem;
+  font-weight: 500;
+  margin-bottom: 30px;
+  color: #3f2d45;
+}
+
+h1 span {
+  display: block;
+  font-size: 1.5rem;
+  margin-top: 8px;
+}
+
+/* IMAGE */
+.home-image {
+  width: 100%;
+  max-width: 360px;
+  margin:0 auto;
+  border-radius: 10px;
+}
+
+/* TEXTE */
+.poem {
+  text-align: left;
+  font-size: 0.95rem;
+  color: #3a3a3a;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  line-height: 1.9;
+}
+
+/* FOOTER */
+.footer {
+  margin-top: 70px;
+  padding: 25px;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #888;
+  background-color: #ffffff;
+}
+
+/* TABLET+ */
+@media (min-width: 768px) {
+  main {
+    max-width: 760px;
+  }
+
+  h1 {
+    font-size: 2.6rem;
+  }
+
+  .home-image {
+    max-width: 420px;
+  }
+
+  .poem {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 1024px) {
+  .logo {
+    width: 85px;        /* plus grand */
+    margin-left: 10px;  /* respirer un peu */
+  }
+
+  .header {
+    padding: 20px 60px;
+  }
+}
