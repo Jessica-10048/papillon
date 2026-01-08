@@ -9,9 +9,14 @@ const Home = () => {
   }, []);
 
   return (
+    <>
     <div>
       <h1>Bienvenue Les Papillons 🦋</h1>
     </div>
+    <div>
+      <img src="" alt="" />
+    </div>
+    </>
   );
 };
 
