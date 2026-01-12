@@ -1,10 +1,10 @@
 import { useEffect } from "react";
-import axios from "axios";
+import api from '../utilis/axios';
 import butterfly from "../assets/butterfly.jpg";
 
 const Home = () => {
   useEffect(() => {
-    axios
+    api
       .get("http://localhost:8000")
       .then(res => console.log(res.data))
       .catch(err => console.error(err));
