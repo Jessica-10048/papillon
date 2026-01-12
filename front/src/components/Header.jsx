@@ -1,5 +1,5 @@
 import logo from "../assets/logoPapillon.png";
-
+import { Router , Link } from "react-router";
 
 const Header = () => {
   return (
@@ -7,9 +7,10 @@ const Header = () => {
       <img src={logo} alt="Logo Papillon" className="logo" />
       <nav>
         <ul className="nav-list">
-          <li>Accueil</li>
-          <li>À propos</li>
-          <li>Contact</li>
+          <Link>Accueil</Link>
+          <Link>À propos</Link>
+          <Link>Contact</Link>
+          <Link>connexion </Link>
         </ul>
       </nav>
     </header>
