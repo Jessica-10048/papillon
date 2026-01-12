@@ -40,7 +40,5 @@ router.put('/update/:id', verifieToken, UsersController.update_user);
 // Supprimer un user - réservée aux admins
 router.put('/delete/:id', verifieToken, UsersController.delete_user);
 
-// Lister les professeurs - protégée (CORRIGÉ: GET au lieu de PUT)
-router.get('/prof', verifieToken, UsersController.get_all_profs);
 
 module.exports = router;

@@ -335,18 +335,6 @@ const delete_user = async (req, res, next) => {
   }
 };
 
-// =============================================================================
-// READ - Récupérer tous les professeurs avec find()
-// =============================================================================
-const get_all_profs = async (req, res) => {
-  try {
-    // Récupération des utilisateurs qui sont professeurs avec find()
-    const profs = await users.find({ role: "admin", isProf: true });
-    res.status(200).json(profs);
-  } catch (error) {
-    res.status(500).json({ message: error.message });
-  }
-};
 
 // Export des fonctions du contrôleur
 module.exports = {
@@ -356,7 +344,6 @@ module.exports = {
   update_user,
   get_user,
   delete_user,
-  get_all_profs,
   verifyEmail,
   forgotPassword,
   resetPassword,
